@@ -21,12 +21,14 @@ body {
 }
 
 .container {
-    max-width: 640px;
+    max-width: 400px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 30px #363636;
+    transition: 0.3s;
+    margin-top: 10%;
 }
 
 form input, form label, form button {
@@ -71,4 +73,11 @@ form button:active {
 
 .bad {
     background-color: rgb(255, 150, 150);
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 90%;
+        margin-top: 40%;
+    }
 }
